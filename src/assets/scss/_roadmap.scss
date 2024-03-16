@@ -1,0 +1,55 @@
+.roadMap{
+    padding-top: 348px;
+    padding-bottom: 102px;
+    background-color: $primary2;
+    .section-title{
+        margin-top: -200px;
+        h2{
+            @include font-150;
+            letter-spacing: 3.1px;
+            color: $textC3;
+        }
+        img{
+            max-width: 545px;
+        }
+    }
+}
+.card-wrapper{
+    margin-top: 80px;
+}
+.single-card{
+    padding: 40px 32px 80px;
+    border-radius: 12px;
+    border: 2px solid #0A1A03;
+    height: 100%;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+    margin-bottom: 30px;
+    @include sm{
+        padding: 30px;
+    }
+    a{
+        display: inline-block;
+        margin-bottom: 90px;
+        transition: all .3s ease-in-out;
+        svg{
+            transition: all .3s ease-in-out;
+        }
+        
+        @include sm{
+            margin-bottom: 40px;
+        }
+    }
+    p{
+        color: #081702 !important;
+        opacity: 0.8;
+        max-width: 292px;
+        @include font-24;
+    }
+    &:hover a svg{
+        transform: rotate(45deg);
+    }
+    &:hover{
+        background: #4EC43F;
+    }
+}

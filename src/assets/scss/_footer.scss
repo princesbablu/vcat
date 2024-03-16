@@ -1,0 +1,65 @@
+.footer{
+    padding-top: 280px;
+    padding-bottom: 90px;
+    @include mmd{
+        padding-top: 150px;
+    }
+    .footerLogo{
+        max-width: 358px;
+        margin-bottom: 25px;
+        display: inline-block;
+    }
+    .wallet-txt{
+        margin-bottom: 70px;
+        @include font-28;
+        @include CocogoosePro;
+        color: $paragraph;
+        @include mmd{
+            margin-bottom: 30px;
+        }
+    }
+    .footerMiddle{
+        flex-direction: column;
+        justify-content: space-between;
+        p{
+            font-family: "Inter", sans-serif;  
+            @include font-20;
+            font-weight: 500;
+            line-height: 150%;
+            color: $textC6;
+        }
+        padding-left:30%;
+        @include lg{
+            padding-left: 20%;
+        }
+        @include mmd{
+            padding-left: 10%;
+        }
+        @include sm{
+            padding-left: 0;
+        }
+    }
+    .fmenu{
+        a{
+            display: block;
+            color: $paragraph;
+            @include font-18;
+            text-transform: uppercase;
+            line-height: 120%;
+            @include CocogoosePro;
+            margin-bottom: 14px;
+            @include transition;
+            &:hover{
+                opacity: .5;
+            }
+        }
+        margin-bottom: 60px;
+        @include mmd{
+            margin-bottom: 30px;
+        }
+
+    }
+    .footerRight{
+       margin-top: -130px;
+    }
+}

@@ -1,0 +1,124 @@
+.howToBuy{
+    padding-top: 276px;
+    padding-bottom: 122px;
+    .section-title{
+        position: relative;
+        gap: 30px;
+        margin-top: -300px;
+        h2{
+            @include font-114;
+            margin-bottom: -25px;
+            @include sm{
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+        figure{
+            max-width: 388px;
+        }
+        @include sm{
+            flex-direction: column-reverse;
+            align-items: center !important;
+        }
+    }
+    .hItemWrapper{
+        margin-top: 72px;
+        @include sm{
+            margin-top: 30px;
+        }
+    }
+    .hSingleItem{
+        border-radius: 32px;
+        background: #4EC43F;
+        padding: 42px;
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &::before{
+            position: absolute;
+            content: "";
+            left: -30px;
+            top: 55%;
+            width: 330px;
+            height: 330px;
+            background-image: url('../img/howSItemShap.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left top;
+            z-index: -1;
+            transform: translateY(-50%);
+            scale: 1.1;
+        }
+        .sImg{
+            min-width: 193px;
+            text-align: center;
+            img{
+                width: auto;
+            }
+        }
+        h3{
+            @include CocogoosePro-letterpress;
+            @include font-32;
+            color: $textC3;
+            margin-bottom: 15px;
+        }
+        p{
+            @include CocogoosePro-light;
+            @include font-24;
+            color: $textC2;
+        }
+    &:nth-child(even){
+        flex-direction: row-reverse;
+        @include sm{
+            flex-direction: column;
+            gap: 30px;
+        }
+        &::before{
+            background-position: top right;
+            right: -30px;
+            left: auto;
+        }
+    }
+    }
+    .hSingleItem{
+        @include sm{
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+    .hSingleItem.direction{
+        flex-direction: row;
+        @include sm{
+            flex-direction: column-reverse;
+        }
+    }
+    .copyed svg {
+        font-size: 30px;
+    }
+    .info {
+        width: 100%;
+    }
+    .tokenomics_copyTxt{
+        position: relative;
+            max-width: 769px;
+        input {
+            width: 100%;
+            font-family: "Inter", sans-serif;
+            background: transparent;
+            height: 64px;
+            padding: 8px 8px 8px 24px;
+            border-radius: 8px;
+            border: 1px solid #000;
+        }
+        button{
+            border: 0;
+            background: transparent;
+            padding: 0;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

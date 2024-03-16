@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+html, html body{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'CocogoosePro';
+    font-weight: 400;
+    src: url('../fonts/CocogooseProRegularTrial.ttf');
+    src: local('☺'),  
+         url('../fonts/CocogooseProRegularTrial.ttf') format('truetype'), 
+}
+
+@font-face {
+    font-family: 'CocogoosePro-letterpress';
+    font-weight: 400;
+    src: url('../fonts/CocogooseProLetterpressTrial.ttf');
+    src: local('☺'),  
+         url('../fonts/CocogooseProLetterpressTrial.ttf') format('truetype'), 
+}
+
+@font-face {
+    font-family: 'CocogoosePro-light';
+    font-weight: 300;
+    src: url('../fonts/CocogooseProLightTrial.ttf');
+    src: local('☺'),  
+         url('../fonts/CocogooseProLightTrial.ttf') format('truetype'), 
+}
+  
+body {
+    font-family: 'CocogoosePro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    background: $primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'CocogoosePro-letterpress';
+
+};
+
+h1{
+    @include font-116;
+}
+
+h2{
+    @include font-100;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+    @include transition;
+}
+
+input,
+textarea,
+button {
+    padding: 10px 25px;
+    outline: none;
+    @include transition;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    border-color: #f3f3f3;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    @include transition;
+}
+
+
+/*Hide number spin button*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container {
+   max-width: 1528px;
+}
+.social-links li{
+    display: inline-block;
+    a {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-color: $heading;
+        margin-right: 16px;
+        text-align: center;
+        line-height: 48px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 22px;
+        @include mmd{
+            margin-bottom: 15px;
+        }
+    }
+    &:hover a{
+        background-color: $hover;
+    }
+}
+.topShap{
+    position: relative;
+    z-index: 1;
+}
+.sectionShap{
+    position:absolute;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 171px;
+    z-index: -1;
+}
+figure{
+    margin: 0;
+}

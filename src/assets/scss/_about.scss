@@ -1,0 +1,26 @@
+.about{
+    padding-top: 410px;
+    padding-bottom: 206px;
+    background-color: $primary2;
+    .aboutLeft{
+        position: relative;
+    }
+    .aboutImg img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 724px;
+        margin-bottom: -85px;
+    }
+    .aboutContent{
+        h2{
+            margin-bottom: 40px;
+        }
+        p{
+            @include font-26;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: $text;
+        }
+    }
+}
